@@ -26,12 +26,13 @@ class Teacher extends Person {
   }
 }
 
+const person = new Person("John", 30);
+
 const student = new Student("John", 20);
 student.study(); 
 
 const teacher = new Teacher("Jane", 35);
 teacher.teach();
-teacher.setAge(36);
 
 // Do not change the code below this line
 window.Person = Person;
