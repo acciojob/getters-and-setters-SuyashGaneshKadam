@@ -1,15 +1,4 @@
 //complete this code
-// class Person {}
-
-// class Student extends Person {}
-
-// class Teacher extends Person {}
-
-// Do not change the code below this line
-// window.Person = Person;
-// window.Student = Student;
-// window.Teacher = Teacher;
-
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -42,7 +31,9 @@ student.study();
 
 const teacher = new Teacher("Jane", 35);
 teacher.teach();
+teacher.setAge(36);
 
+// Do not change the code below this line
 window.Person = Person;
 window.Student = Student;
 window.Teacher = Teacher;
