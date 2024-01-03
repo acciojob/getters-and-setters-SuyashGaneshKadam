@@ -2,7 +2,7 @@
 class Person {
   constructor(name, age) {
     this.name = name;
-    this._age = age;
+    this.age = age;
   }
 
   getName() {
@@ -10,7 +10,7 @@ class Person {
   }
 
   setAge(age) {
-    this._age = age;
+    this.age = age;
   }
 }
 
@@ -28,7 +28,7 @@ class Teacher extends Person {
 
 const person = new Person("John", 30);
 
-const student = new Student("John", 20);
+const student = new Student("Jake", 20);
 student.study(); 
 
 const teacher = new Teacher("Jane", 35);
