@@ -1,32 +1,129 @@
-//complete this code
+// //complete this code
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+
+//   getName() {
+//     return this.name;
+//   }
+
+//   setAge(age) {
+//     this.age = age;
+//   }
+// }
+
+// class Student extends Person {
+// 	constructor(){
+// 		super
+// 	}
+//   study() {
+//     console.log(`${this.name} is studying`); 
+//   }
+// }
+
+// class Teacher extends Person {
+//   teach() {
+//     console.log(`${this.name} is teaching`);
+//   }
+// }
+
+// // Do not change the code below this line
+// window.Person = Person;
+// window.Student = Student;
+// window.Teacher = Teacher;
+
 class Person {
+
+  _name;
+
+  _age;
+
+ 
+
   constructor(name, age) {
-    this.name = name;
-    this.age = age;
+
+    this._name = name;
+
+    this._age = age;
+
   }
 
-  getName() {
-    return this.name;
+ 
+
+  get name() {
+
+    return this._name;
+
   }
 
-  setAge(age) {
-    this.age = age;
+ 
+
+  get age() {
+
+    return this._age;
+
   }
+
+ 
+
+  set age(age) {
+
+    this._age = age;
+
+  }
+
 }
+
+ 
 
 class Student extends Person {
-  study() {
-    console.log(`${this.name} is studying`); 
+
+  constructor(name, age) {
+
+    super(name, age);
+
   }
+
+ 
+
+  study() {
+
+    console.log(`${this.name} is studying`);
+
+  }
+
 }
+
+ 
 
 class Teacher extends Person {
-  teach() {
-    console.log(`${this.name} is teaching`);
+
+  constructor(name, age) {
+
+    super(name, age);
+
   }
+
+ 
+
+  teach() {
+
+    console.log(`${this.name} is teaching`);
+
+  }
+
 }
 
+ 
+
+ 
+
 // Do not change the code below this line
+
 window.Person = Person;
+
 window.Student = Student;
+
 window.Teacher = Teacher;
